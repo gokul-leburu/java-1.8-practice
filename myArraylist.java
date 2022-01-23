@@ -3,9 +3,9 @@ import java.util.*;
 public class myArraylist {
 	public static void main(String[] args) {
 		List<MyStudent> lst =new ArrayList<MyStudent>();
-		lst.add(new MyStudent(1,"nikhil",23333));
-		lst.add(new MyStudent(25,"zeezi",25000));
-		lst.add(new MyStudent(85,"mango",85000));
+		lst.add(new MyStudent(1,"gokul1",23333));
+		lst.add(new MyStudent(2,"gokul2",25000));
+		lst.add(new MyStudent(3,"gokul3",85000));
 		//Collections.sort(lst,new SortByName());
 		Collections.sort(lst,Comparator.comparing(MyStudent::getFees));
 		for(MyStudent s:lst) 
